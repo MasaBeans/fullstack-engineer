@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <p>hello <strong>太字</strong> world</p>
+    <p id="top">hello <strong>太字</strong> world</p>
     <p>hello <em>イタリック</em> world</p>
     <p>hello <ins>下線</ins> world</p>
     <p>hello <sup>上付き</sup> world</p>
@@ -15,7 +15,73 @@
     <p>hello <del>打ち消し線</del> world</p>
     <hr> another world
 
+    <ul>番号なしリスト
+        <li>リスト<strong>ストロング</strong></li>
+        <li>リスト２<ins>イタリック</ins>イタリア産</li>
+        <li>リスト３</li>
+    </ul>
 
+    <ol start="10" reversed type="a">番号ありリスト
+        <li>リスト１</li>
+        <li>リスト２</li>
+        <li>リスト３</li>
+        <li>リスト４</li>
+    </ol>
+
+    <img src="hormer.png" width="100" height="100">
+
+    <div><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Marge_Simpson.png/220px-Marge_Simpson.png" width=100></div>
+
+
+    <form>
+        <p>テキストボックス：<input type="text" placeholder="山田太郎"></p>
+        <p><input type="checkbox" checked>チェックボックス１</p>
+        <p><input type="checkbox">チェックボックス２</p>
+
+        <div>ラジオボタン
+            <p><input type="radio" name="group1" checked>ラジオボタン１</p>
+            <p><input type="radio" name="group1">ラジオボタン２</p>
+        </div>
+
+        <p>プルダウン
+            <select>
+                <option>選択１</option>
+                <option selected>選択２</option>
+                <option>選択３</option>
+            </select>
+        </p>
+
+        <p><input type="submit" value="ログイン"></p>
+    </form>
+
+    <div>テーブル
+        <table border>
+            <thead>
+                <tr>
+                    <th>ヘッダー１</th>
+                    <th>ヘッダー２</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>データ１</td>
+                    <td>データ２</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p><a href="http://www.google.com">Google検索</a></p>
+    <p><a href="helloworld.html">helloworld.html</a></p>
+    <p>hormer1<a href="http://www.wikipedia.org"><img src="hormer.png"></a></p>
+    <p>hormer2<a href="http://www.wikipedia.org"><img src="hormer.png"></a></p>
+    <p id="hormer3">hormer3<a href="http://www.wikipedia.org"><img src="hormer.png"></a></p>
+    <p>hormer4<a href="http://www.wikipedia.org"><img src="hormer.png"></a></p>
+    <p>hormer5<a href="http://www.wikipedia.org"><img src="hormer.png"></a></p>
+
+    <p><a href="#top">トップへ戻る</a></p>
+    <p><a href="#hormer3">３番目のホーマーにジャンプ</a></p>
 </body>
 
 </html>
