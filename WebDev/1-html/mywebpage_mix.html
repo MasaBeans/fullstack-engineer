@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+    <title>初めてのWEBページ</title>
+</head>
+
+
+
+
+
+
+<body>
+    <div id="top">
+        <h1>初めてのWEBページ</h1>
+        <p>こんにちは、<strong>初めての</strong>Webページです。これまでに学んだ基本的なことを組み合わせてページを作ってみました。<em>2018/05/26</em>に作成。<ins>とりあえず下線を引きます</ins>。あれ<sup>※1</sup>とそれ<sub>※2</sub>そんでもってレレレのレ<del>ぐへへのへ</del></p>
+    </div>
+    <hr>
+    <div>
+        <h2>MOKUJI</h2>
+        <ol type="I">
+            <li><a href="#table">意味のないテーブル</a></li>
+            <li><a href="#basic">基本情報</a></li>
+            <li><a href="#homer">シンプソンのホーマー</a></li>
+        </ol>
+    </div>
+
+    <hr>
+    <div id="table">
+        <h3>意味のないテーブル</h3>
+        <table border>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>PRODUCT</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>小松菜</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ピーマン</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr>
+
+    <div id="basic">
+        <h3>基本情報</h3>
+        <form>
+            <ul>
+                <li>ユーザー名<input type="text" placeholder="nanimitendayo"></li>
+                <li><input type="radio" name="sex" checked>男
+                    <input type="radio" name="sex">女</li>
+                <li>今の気持ち
+                    <select>
+                    <option>すごい</option>
+                    <option>やばい</option>
+                    <option>ごいごい</option>
+                </select>
+                </li>
+            </ul>
+            <p><input type="submit" value="登録"></p>
+        </form>
+
+    </div>
+    <hr>
+    <div id="homer">
+        <h3>シンプソンのホーマー</h3>
+        <p>↓こやつをクリックするとWikipediaにジャンプするぞぃ。</p>
+        <a href="https://en.wikipedia.org/wiki/Homer_Simpson" target="_blank">
+            <image src="homer.png" height="240"></image>
+        </a>
+
+        <p>↓ホーマーのイカした動画もあるぞぃ</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kZu5iDTtNg0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    </div>
+
+    <div>
+        <p><a href="#top">トップへ戻る</a></p>
+    </div>
+</body>
+
+
+<hr>
+<footer>
+    初めてのWEBページ MasaBeans&copy;
+</footer>
+
+</html>
