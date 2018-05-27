@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>CSS勉強用のページ</title>
+
+    <!--内部CSS-->
+    <style type="text/css">
+        #test {
+            color: red;
+        }
+
+        p {
+            color: purple;
+            font-size: 100%;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .large {
+            font-size: 200%;
+        }
+
+        .under_line {
+            text-decoration: underline;
+        }
+
+        .section1 {
+            background-color: aqua;
+            width: 30%;
+            float: right;
+        }
+
+        .section2 {
+            background-color: #FF9999;
+            width: 30%;
+        }
+
+        .section3 {
+            clear: both;
+            background-color: lightgray;
+            height: 1000px;
+            position: relative;
+            left: 30px;
+            opacity: 0.8;
+        }
+
+        .section4 {
+            background-color: antiquewhite;
+            width: 300px;
+            position: absolute;
+            left: 50px;
+            top: 30px;
+            opacity: 0.8;
+        }
+
+        .section5 {
+            background-color: lightgreen;
+            width: 300px;
+            height: 200px;
+            position: fixed;
+            top: 300px;
+            left: 100px;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <!--インラインCSS-->
+    <div class="section1">
+        <p>セクション１</p>
+        <h1>CSS勉強用のページ</h1>
+        <p style="color:blue; font-size:80%">インラインCSSでスタイルを指定</p>
+        <p id="test">内部CSS　idでスタイルを指定</p>
+
+        <p>内部CSSでスタイルを指定</p>
+    </div>
+
+    <div class="section2">
+        <p>セクション２</p>
+        <p class="green">クラスグリーン１</p>
+
+        <p class="green">クラスグリーン２</p>
+    </div>
+
+    <div class="section3">
+        <p>セクション３</p>
+        <p class="large">サイズ<span class="under_line">２００％</span>１</p>
+        <p class="large">サイズ<span class="under_line">２００％</span>２</p>
+    </div>
+
+    <div class="section4">
+        <p>セクション４</p>
+        <p>こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちは</p>
+    </div>
+
+    <div class="section5">
+        <p>セクション５</p>
+        <p>ありがとうありがとうありがとうありがとうありがとうありがとうありがとうありがとうありがとうありがとうありがとうありがとうありがとうありがとう</p>
+    </div>
+
+</body>
+
+
+<footer>
+
+</footer>
+
+</html>
