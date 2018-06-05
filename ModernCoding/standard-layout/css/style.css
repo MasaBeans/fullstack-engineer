@@ -148,6 +148,55 @@ a:active {
     line-height: 1;
 }
 
+.heading {
+    padding: 10px 12px;
+    background: url(../images/bg-slash.gif);
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+}
+
+.scroll-list {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 30px;
+    line-style-type: none;
+}
+
+.scroll-list .scroll-item a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    font-size: 0;
+    transition: background-color 0.1s;
+}
+
+.scroll-list .scroll-item:nth-of-type(even) a {
+    background: url('../images/bg-slash.gif');
+}
+
+.scroll-list .scroll-item a:hover {
+    background-color: #fafaf8;
+}
+
+.scroll-list .date {
+    display: inline-block;
+    width: 30%;
+    font-size: 1rem;
+}
+
+.scroll-list .category {
+    display: inline-block;
+    width: 10%;
+    font-size: 1rem;
+}
+
+.scroll-list .title {
+    display: inline-block;
+    width: 60%;
+    font-size: 1rem;
+}
+
+
 .sidemenu {
     float: right;
     width: 275px;
