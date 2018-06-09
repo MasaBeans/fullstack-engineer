@@ -282,7 +282,6 @@ a:active {
     counter-increment: ranking;
     display: inline-block;
     font-size: 1.0rem;
-    transform: rotate(-45deg);
 }
 
 
@@ -290,7 +289,13 @@ a:active {
     margin-top: 15px;
 }
 
+
+.ranking > .ranking-item + .ranking-item {
+    margin-top: 25px;
+}
+
 .ranking .ranking-item a {
+    position: relative;
     display: block;
     font-size: 0;
     transition: opacity 0.15s;
@@ -310,6 +315,7 @@ a:active {
 
 .ranking .text {
     display: inline-block;
+    margin-left: 38px;
     width: 182px;
     height: 55px;
     color: #000;
@@ -321,18 +327,23 @@ a:active {
     /*    white-space: nowrap;*/
 }
 
+
 .ranking .order {
+    position: absolute;
+    top: -15px;
+    left: 31px;
     display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 30px;
+    height: 30px;
     margin: 0 10px;
     border: 1px solid #ccc;
+    border-radius: 15px;
     color: #aaa;
+    background-color: #fff;
     vertical-align: 20px;
     text-align: center;
     font-weight: bold;
-    line-height: 16px;
-    transform: rotate(45deg);
+    line-height: 30px;
 }
 
 .ranking .ranking-item:nth-of-type(1) .order,
@@ -356,9 +367,72 @@ a:active {
     background-color: #a0541a;
 }
 
+.documents {
+    margin: 10px 10px 30px
+}
 
+.documents,
+.documents ul {
+    list-style-type: none;
+}
 
-. .clearfix::after {
+.documents > li .title {
+    margin: 15px 0;
+    padding-left: 8px;
+    border-left: 5px solid #d03c56;
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+
+.documents > li + li {
+    margin-top: 25px;
+}
+
+.documents > li ul {
+    margin: 15px;
+}
+
+.documents > li ul > li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    background: url('../images/arrow.gif') no-repeat left center;
+}
+
+.documents a:hover {
+    text-decoration: underline;
+}
+
+.search-box {
+    padding: 15px;
+    background-color: #ccc;
+    font-size: 0;
+}
+
+.search-box * {
+    font-size: 1.2rem;
+}
+
+.search-box .search-input {
+    width: 195px;
+    height: 26px;
+    padding 0 10px;
+    border: none;
+}
+
+.search-box .search-button {
+    width: 50px;
+    height: 26px;
+    border: none;
+    background-color: #d03c56;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-box .text {
+    margin-top: 12px;
+}
+
+.clearfix::after {
     content: '';
     display: block;
     clear: both;
@@ -366,4 +440,41 @@ a:active {
 
 .footer {
     width: 100%;
+    padding: 20px 0 30px;
+    background: #2d3d54;
+    color: #fff;
+}
+
+.horizontal-list {
+    width: 970px;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 0px;
+}
+
+.horizontal-list .horizontal-item {
+    display: inline-block;
+    padding: 0 15px;
+    letter-spacing: 1px;
+}
+
+.horizontal-list .horizontal-item + .horizontal-item {
+    border-left: 1px solid #bbb;
+}
+
+.horizontal-item a {
+    font-size: 1.2rem;
+    border-bottom: 1px dashed #777;
+    color: #bbb;
+    transition: color 0.15s;
+}
+
+.horizontal-item a:hover {
+    color: #ddd;
+}
+
+.footer p {
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 1px;
 }
